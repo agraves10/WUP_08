@@ -30,3 +30,34 @@ summary.lm(simp)
 
 ## Compare all models that predict WEIGHT other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
 
+
+
+```{r}
+headlenmodel <- lm(WEIGHT~HEADLEN,data=bears)
+plot(WEIGHT~HEADLEN,data=bears)
+abline(headlenmodel)
+summary.lm(headlenmodel)
+```
+
+ Neck         ARsqrd:0.87     RST:43.91  
+ AGE          ARsqrd:0.55     RST:81.47  
+
+The age model grapgh shows its points to be far away from the line while the simp grapgh has much closer points to it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
