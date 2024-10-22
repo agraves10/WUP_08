@@ -44,6 +44,20 @@ summary.lm(headlenmodel)
 
 The age model grapgh shows its points to be far away from the line while the simp grapgh has much closer points to it.
 
+```{r}
+headlenmodel <- lm(WEIGHT~HEADLEN,data=bears)
+plot(WEIGHT~HEADLEN,data=bears)
+abline(headlenmodel)
+summary.lm(headlenmodel)
+```
+ 
+ Best to worst
+ Neck         ARsqrd:0.87     RST:43.91  
+ Head length  ARsqrd:0.69     RST:77.81  
+ AGE          ARsqrd:0.55     RST:81.47  
+ 
+ The headen graghp model is scattered but it is still better than the agemodel. Compariong the adjusted R squared being higher at 0.69  and the age model adjusted R squared is 0.55.
+
 
 
 
